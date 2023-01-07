@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="./js/aframe-text-geometry-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="tree" src="./birthday_cake/scene.gltf"></a-asset-item>
+        <a-asset-item id="firework_asset" src="./firework/scene.gltf"></a-asset-item>
+        <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="#tree" scale="0.25 0.25 0.25" position="0 0 -7"></a-entity>
+      <a-gltf-model id="firework"
+                    position="0 0 -60"
+                    scale="2 2 2"
+                    src="#firework_asset">
+			</a-gltf-model>
+      <a-entity position="-1 2.2 -2.5"
+					      rotation="180 180 180"
+				  	    text-geometry="font: #optimerBoldFont;  
+				  	                   size: 0.15; 
+				  	                   height: 0.05;
+				  	                   bevelEnabled: true;
+				  	                   bevelSize: 0.005;
+				                       bevelThickness: 0.03;
+				  	                   value: Feliz cumple Mauricio!"
+				  	                   material="color: #f5ee36"></a-entity>
+      <a-sky color="#000000"></a-sky>
+    </a-scene>
+    <script>
+      let firework_model = document.getElementById('firework');
+      console.log(firework_model);
+      firework_model.setAttribute('animation-mixer',{clip: "CINEMA_4D_Main",loop: "repeat"});
+    </script>
+  </body>
+</html>
