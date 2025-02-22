@@ -9,11 +9,14 @@
     <a-scene embedded arjs>
       <a-assets>
         <a-asset-item id="tree" src="./birthday_cake/scene.gltf"></a-asset-item>
+	<a-asset-item id="centro_entretenimiento" src="./centro_entretenimiento.obj"></a-asset-item>
         <a-asset-item id="firework_asset" src="./firework/scene.gltf"></a-asset-item>
         <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
       </a-assets>
       <a-entity gltf-model="#tree"
                 scale="0.175 0.175 0.175" 
+                position="0 0 -1000000"></a-entity>
+      <a-entity gltf-model="#centro_entretenimiento"
                 position="0 0 -10"></a-entity>
       <a-gltf-model id="firework"
                     position="0 0 -75"
