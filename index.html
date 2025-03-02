@@ -8,32 +8,12 @@
   <body>
     <a-scene embedded arjs>
       <a-assets>
-        <a-asset-item id="tree" src="./birthday_cake/scene.gltf"></a-asset-item>
 	<a-asset-item id="mueble" src="./carpinteria/carpinteria.gltf"></a-asset-item>
-        <a-asset-item id="firework_asset" src="./firework/scene.gltf"></a-asset-item>
         <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
       </a-assets>
-      <a-entity gltf-model="#tree"
-                scale="0.175 0.175 0.175" 
-                position="0 0 -1000000"></a-entity>
       <a-entity gltf-model="#mueble"
 	        scale="0.175 0.175 0.175" 
-                position="0 0 -250"></a-entity>
-      <a-gltf-model id="firework"
-                    position="0 0 -75"
-                    scale="2 2 2"
-                    src="#firework_asset">
-			</a-gltf-model>
-      <a-entity position="-1 2.2 -5"
-					      rotation="180 180 180"
-				  	    text-geometry="font: #optimerBoldFont;  
-				  	                   size: 0.15; 
-				  	                   height: 0.05;
-				  	                   bevelEnabled: true;
-				  	                   bevelSize: 0.005;
-				                       bevelThickness: 0.03;
-				  	                   value: Feliz cumple Mauricio!"
-				  	                   material="color: #f5ee36"></a-entity>
+                position="0 0 -25"></a-entity>
     </a-scene>
     <script>
       let firework_model = document.getElementById('firework');
