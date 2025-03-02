@@ -3,9 +3,6 @@
 		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
-	"extensionsUsed":[
-		"KHR_materials_specular"
-	],
 	"scene":0,
 	"scenes":[
 		{
@@ -18,38 +15,36 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"centro_entretenimiento",
+			"name":"centro_entretenimiento_obj",
 			"rotation":[
-				0.7071068286895752,
-				0,
-				0,
-				0.7071068286895752
+				0.040235813707113266,
+				0.473368376493454,
+				-0.011250058189034462,
+				0.8798732161521912
 			]
 		}
 	],
 	"materials":[
 		{
 			"doubleSided":true,
-			"extensions":{
-				"KHR_materials_specular":{
-					"specularFactor":0
-				}
+			"name":"Material.002",
+			"normalTexture":{
+				"index":0
 			},
-			"name":"Roble_-_Semibrillante.002",
 			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0,
-					0,
-					0,
-					1
-				],
-				"metallicFactor":0
+				"baseColorTexture":{
+					"index":1
+				},
+				"metallicFactor":0,
+				"metallicRoughnessTexture":{
+					"index":2
+				}
 			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"centro_entretenimiento.002",
+			"name":"centro_entretenimiento_obj.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -61,6 +56,37 @@
 					"material":0
 				}
 			]
+		}
+	],
+	"textures":[
+		{
+			"sampler":0,
+			"source":0
+		},
+		{
+			"sampler":0,
+			"source":1
+		},
+		{
+			"sampler":0,
+			"source":2
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"oak_veneer_01_nor_gl_4k.exr",
+			"uri":"oak_veneer_01_nor_gl_4k_exr.png"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"oak_veneer_01_diff_4k",
+			"uri":"oak_veneer_01_diff_4k.jpg"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"oak_veneer_01_rough_4k.exr",
+			"uri":"oak_veneer_01_rough_4k_exr.png"
 		}
 	],
 	"accessors":[
@@ -125,10 +151,16 @@
 			"target":34963
 		}
 	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
+		}
+	],
 	"buffers":[
 		{
 			"byteLength":218728,
-			"uri":"carpinteria.bin"
+			"uri":"untitled.bin"
 		}
 	]
 }
