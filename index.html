@@ -8,17 +8,17 @@
   <body>
     <a-scene embedded arjs>
       <a-assets>
-	<a-asset-item id="mueble" src="./carpinteria/carpinteria.gltf"></a-asset-item>
+        <a-asset-item id="mueble" src="./carpinteria/carpinteria.gltf"></a-asset-item>
         <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
       </a-assets>
+
+      <!-- ADD LIGHTING -->
+      <a-light type="ambient" color="#ffffff" intensity="1"></a-light>
+      <a-light type="directional" color="#ffffff" intensity="2" position="1 1 1"></a-light>
+
       <a-entity gltf-model="#mueble"
-	        scale="0.175 0.175 0.175" 
+                scale="0.175 0.175 0.175" 
                 position="0 0 -25"></a-entity>
     </a-scene>
-    <script>
-      let firework_model = document.getElementById('firework');
-      console.log(firework_model);
-      firework_model.setAttribute('animation-mixer',{clip: "CINEMA_4D_Main",loop: "repeat"});
-    </script>
   </body>
 </html>
